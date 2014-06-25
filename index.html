@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Notificações - Comunidade de Práticas</title>
+    <style type="text/css">
+			/* ==========================================================================
+				 Client-Specif Styles
+			========================================================================== */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* ==========================================================================
+				 Reset
+			========================================================================== */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* ==========================================================================
+				 Template Styles
+			========================================================================== */
+
+			/* ========== Page Styles ========== */
+			#bodyCell{padding:20px;}
+			#templateContainer{width:600px;}
+			body, #bodyTable{
+				/*@editable*/ background:url(img/dynamic/bg-pattern-invert.png);
+			}
+			h1, h2, h3, h4 {
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				/*@editable*/ text-align:left;
+				display:block;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+			}
+			h1, h2 {
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+			}
+			h3, h4 {
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+			}
+			h1{
+				/*@editable*/ color:#202020 !important;
+				/*@editable*/ font-size:26px;
+			}
+			h2{
+				/*@editable*/ color:#404040 !important;
+				/*@editable*/ font-size:20px;
+			}
+			h3{
+				/*@editable*/ color:#606060 !important;
+				/*@editable*/ font-size:16px;
+			}
+			h4{
+				/*@editable*/ color:#808080 !important;
+				/*@editable*/ font-size:14px;
+			}
+
+			/* ========== Header Styles ========== */
+			#templatePreheader{
+				/*@editable*/ background-color:#F4F4F4;
+			}
+			.preheaderContent{
+				/*@editable*/ color:#808080;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			#templateHeader{
+				/*@editable*/ background-color:#F4F4F4;
+			}
+			.headerContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding-top:0;
+				/*@editable*/ padding-right:0;
+				/*@editable*/ padding-bottom:0;
+				/*@editable*/ padding-left:0;
+				/*@editable*/ text-align:left;
+				/*@editable*/ vertical-align:middle;
+			}
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#009ee4;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			/* ========== Body Styles ========== */
+			#templateBody{
+				width: 100%;
+				/*@editable*/ background-color:#ffffff;
+			}
+			.bodyContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+				width: 90%!important;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+			}
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#009ee4;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+			}
+
+			/* ========== Footer Styles ========== */
+			#templateFooter{
+				/*@editable*/ background-color:#eee;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+			}
+			#templateFooter a {font-weight:bold;}
+			.footerContent{
+				/*@editable*/ color:#808080;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:center;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+			}
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/* ==========================================================================
+				Mobile
+			========================================================================== */
+      @media only screen and (max-width: 480px){
+				/* ========== Client-Specific Styles ========= */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+        body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* ========== Reset ========= */
+				#bodyCell{padding:10px !important;}
+
+				/* ======== Page ======== */
+				#templateContainer{
+					/*@editable*/ width:100% !important;
+					max-width:600px !important;
+				}
+				h1{
+					/*@editable*/ font-size:24px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+				h2{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+				h3{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+				h4{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/* ======== Header ======== */
+				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+				#headerImage{
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+					height:auto !important;
+				}
+				.headerContent{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Body ======== */
+				.bodyContent{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Footer ======== */
+				.footerContent{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:115% !important;
+				}
+				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+				.footerSocial a {
+					float: left;
+				}
+			}
+		</style>
+  </head>
+  <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  	<!-- MAIN // -->
+		<center>
+    	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+      	<tr>
+        	<td align="center" valign="top" id="bodyCell">
+						<!-- Template // -->
+          	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+            	<tr>
+              	<td align="center" valign="top">
+                	<!-- Pre-Header // -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                    <tr>
+                      <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
+                        Este é um e-mail de notificações da Comunidade de Práticas <a href="http://atencaobasica.org.br/" target="_blank">www.atencaobasica.org.br</a>
+                      </td>
+                      <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
+                        Não está abrindo corretamente?<br /><a href="#goout-link" target="_blank">Veja em seu navegador</a>.
+                      </td>
+                    </tr>
+                  </table>
+	                <!-- // end Pre-Header -->
+                </td>
+              </tr>
+            	<tr>
+              	<td align="center" valign="top">
+                	<!-- Header // -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                    <tr>
+                      <td valign="top" class="headerContent">
+                      	<img src="img/dynamic/header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                      </td>
+                    </tr>
+                  </table>
+	                <!-- // end Header -->
+                </td>
+              </tr>
+            	<tr>
+              	<td align="center" valign="top">
+                	<!-- Main Item // -->
+                  <table style="background: #eee;" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                    <tr>
+                      <td valign="top" class="bodyContent" mc:edit="body_content">
+                        <img src="img/dynamic/icon-notifications.jpg" style="float: left; margin-right: 10px;">
+												<h2 style="color: #c4371b!important; margin-top: 0; margin-bottom: 0;"> Notificações</h2>
+                        <h4>01/06/2014</h4>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- // end Main Item -->
+                </td>
+              </tr>
+
+							<!-- Notifications // -->
+							<tr>
+								<td align="center" valign="top">
+									<table style="background: #f7f7f7;" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content">
+												<img src="img/dynamic/avatars/alberto.jpg" style="float: left; margin-right: 10px;">
+												<a href="#profile" target="_blank">Alberto Souza</a> comentou no conteúdo <a href="#link" target="_blank">avaliação</a> na comunidade <a href="#link" target="_blank">Oficina de Metodologias de Aprendizagem em Ensino à Distância</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content">
+												<img src="img/dynamic/avatars/petra.jpg" style="float: left; margin-right: 10px;">
+												<a href="#profile" target="_blank">Thiago Petra</a> comentou no conteúdo <a href="#link" target="_blank">avaliação</a> na comunidade <a href="#link" target="_blank">Oficina de Metodologias de Aprendizagem em Ensino à Distância</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" valign="top">
+									<table style="background: #f7f7f7" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content">
+												<img src="img/dynamic/avatars/lima.jpg" style="float: left; margin-right: 10px;">
+												<a href="#profile" target="_blank">Thiago de Lima</a> comentou no conteúdo <a href="#link" target="_blank">avaliação</a> na comunidade <a href="#link" target="_blank">Oficina de Metodologias de Aprendizagem em Ensino à Distância</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top" class="bodyContent">
+												<img src="img/dynamic/avatars/felipe.jpg" style="float: left; margin-right: 10px;">
+												<a href="#profile" target="_blank">Felipe Cavalcanti</a> comentou no conteúdo <a href="#link" target="_blank">avaliação</a> na comunidade <a href="#link" target="_blank">Oficina de Metodologias de Aprendizagem em Ensino à Distância</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // end Notifications -->
+
+							<!-- Social // -->
+            	<tr>
+              	<td align="center" valign="top">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+                    <tr>
+                      <td valign="top" class="footerContent footerSocial">
+                        <a href="#twitter-url" target="_blank">
+													<img style="margin-bottom: -6px; margin-right: 5px;" src="img/static/icon-social-twitter.jpg">Twitter
+												</a>
+
+												<a href="https://www.facebook.com/comunidadedepraticas" target="_blank">
+													<img style="margin-left: 20px; margin-bottom: -6px; margin-right: 5px;" src="img/static/icon-social-facebook.jpg">Facebook
+												</a>
+
+												<a href="#gplus-url" target="_blank">
+													<img style="margin-left: 20px; margin-bottom: -6px; margin-right: 5px;" src="img/static/icon-social-gplus.jpg">Google Plus
+												</a>
+                      </td>
+                    </tr>
+                  </table>
+	              </td>
+              </tr>
+							<!-- // end Social -->
+
+            </table>
+						<!-- // end Template -->
+	        </td>
+        </tr>
+      </table>
+
+			<!-- Out Footer // -->
+			<table>
+				<tr>
+					<td valign="top" class="footerContent" style="padding-top:0; padding-bottom:40px;">
+						<a href="#unsubscribe-link" target="_blank">Descadastrar meu e-mail desta lista</a>&nbsp;&nbsp;&nbsp;
+						<a href="#preferences-link" target="_blank">Atualizar minhas preferências</a>&nbsp;
+					</td>
+				</tr>
+			</table>
+			<!-- // end Out Footer -->
+    </center>
+		<!-- // end MAIN -->
+  </body>
+</html>
